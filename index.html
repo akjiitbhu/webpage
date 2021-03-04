@@ -219,8 +219,9 @@
 								<li><b style="color:aquamarine">Ankit Kumar Jaiswal,</b> Rajeev Srivastava,"Time
 									Efficient Spliced Image Analysis Using Higher-Order Statistics” Machine Vision and
 									Applications 31, 56 (2020). https://doi.org/10.1007/s00138-020-01107-z</li>
-								<li><b style="color:aquamarine">Ankit Kumar Jaiswal,</b> Rajeev Srivastava,"Forensic 
-									image analysis using inconsistent noise patter” Pattern Analysis and Applications 1-13 (2020). https://doi.org/10.1007/s10044-020-00930-4</li>
+								<li><b style="color:aquamarine">Ankit Kumar Jaiswal,</b> Rajeev Srivastava,"Forensic
+									image analysis using inconsistent noise patter” Pattern Analysis and Applications
+									1-13 (2020). https://doi.org/10.1007/s10044-020-00930-4</li>
 							</ul>
 						</div>
 					</div>
@@ -279,7 +280,8 @@
 								</li>
 								<ul>
 									<strong style="color: yellow;">CRM by SITA (Customer Relationship
-										Management)</strong><a href="http://www.sitanet.in/crm-by-sita.html" target="_blank" class="site-link"> More info.. <i
+										Management)</strong><a href="http://www.sitanet.in/crm-by-sita.html"
+										target="_blank" class="site-link"> More info.. <i
 											class="icon-chevron-right"></i></a>
 									<li>Involved in requirement gathering and design document.</li>
 									<li>Used core part of c# like anonymous method, generics, extension method and
@@ -289,7 +291,8 @@
 								</ul>
 								<ul>
 									<strong style="color: yellow;">SITA ONE (Online Business Management)</strong><a
-										href="http://www.sitanet.in/sitaone.html" target="_blank" class="site-link"> More info.. <i class="icon-chevron-right"></i></a>
+										href="http://www.sitanet.in/sitaone.html" target="_blank" class="site-link">
+										More info.. <i class="icon-chevron-right"></i></a>
 									<li>Developed a cloud based calendar which reflect the much information about
 										products, appointment with customers and meetings.</li>
 									<li>Worked on sales invoices, tax invoices and cash receipts.</li>
@@ -298,7 +301,8 @@
 								</ul>
 								<ul>
 									<strong style="color: yellow;">SITA LMS (Legal Management System)</strong><a
-										href="http://www.sitanet.in/legalpractice.html" target="_blank" class="site-link"> More info.. <i class="icon-chevron-right"></i></a>
+										href="http://www.sitanet.in/legalpractice.html" target="_blank"
+										class="site-link"> More info.. <i class="icon-chevron-right"></i></a>
 									<li>Worked on documentation as well as on requirement analysis.</li>
 									<li>Worked on email based registration form, citation and case related documents
 										cloud.</li>
@@ -329,7 +333,8 @@
 									Information Technology, New Delhi</li>
 								<li>Qualified Graduate Aptitude Test in Engineering (GATE) of session 2014 and 2017.
 								</li>
-								<li>Qualified UGC-JRF and Assistant Professor (June 2020) in Computer Science and Application.
+								<li>Qualified UGC-JRF and Assistant Professor (June 2020) in Computer Science and
+									Application.
 								</li>
 							</ul>
 						</div>
@@ -347,7 +352,8 @@
 								<li>Research Assistantship (Junior Research Fellowship) from July 2017 to July 2019.
 								</li>
 								<li>Research Assistantship (Senior Research Fellowship) from August 2019 till now.</li>
-								<li>Recieved JRF Award Letter (2020-2023) provided by University Grant Commission (India).</li>
+								<li>Recieved JRF Award Letter (2020-2023) provided by University Grant Commission
+									(India).</li>
 							</ul>
 						</div>
 					</div>
@@ -528,19 +534,19 @@
 				</div>
 
 				<div class="col-md-7 mb-5 mb-md-0">
-					<form action="" class="site-form">
+					<form name="submit-to-google-sheet" action="" class="site-form">
 						<h3 class="mb-5">Get In Touch</h3>
 						<div class="form-group">
-							<input type="text" class="form-control px-3 py-4" placeholder="Your Name">
+							<input name="yourname" type="text" class="form-control px-3 py-4" placeholder="Your Name">
 						</div>
 						<div class="form-group">
-							<input type="email" class="form-control px-3 py-4" placeholder="Your Email">
+							<input name="youremail" type="email" class="form-control px-3 py-4" placeholder="Your Email">
 						</div>
 						<div class="form-group">
-							<input type="email" class="form-control px-3 py-4" placeholder="Your Phone">
+							<input name="yourcontact" type="number" class="form-control px-3 py-4" placeholder="Your Phone">
 						</div>
 						<div class="form-group mb-5">
-							<textarea class="form-control px-3 py-4" cols="30" rows="10"
+							<textarea name="yourmessage" class="form-control px-3 py-4" cols="30" rows="10"
 								placeholder="Write a Message"></textarea>
 						</div>
 						<div class="form-group">
@@ -548,20 +554,20 @@
 						</div>
 					</form>
 				</div>
-				
-				<script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbwxUNzukw_HBF4ZLa0ZOWkRKwoMPN0gehiGhE6_z05RnAwUl6MEfuwOHpVWPyjg0JKy/exec'
-  const form = document.forms['submit-to-google-sheet']
 
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => console.log('Success!', response))
-      .catch(error => console.error('Error!', error.message))
-  })
-</script>
-				
-				
+				<script>
+					const scriptURL = 'https://script.google.com/macros/s/AKfycbwxUNzukw_HBF4ZLa0ZOWkRKwoMPN0gehiGhE6_z05RnAwUl6MEfuwOHpVWPyjg0JKy/exec'
+					const form = document.forms['submit-to-google-sheet']
+
+					form.addEventListener('submit', e => {
+						e.preventDefault()
+						fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+							.then(response => console.log('Success!', response))
+							.catch(error => console.error('Error!', error.message))
+					})
+				</script>
+
+
 				<div class="col-md-5 pl-md-5">
 					<h3 class="mb-5">My Contact Details</h3>
 					<ul class="site-contact-details">
@@ -583,20 +589,20 @@
 
 					<footer class="site-footer">
 						<div class="container">
-						<div class="row mb-5">
-							<div class="col-md-12 text-center">
-								<p>
-									
-									
-								</p>
+							<div class="row mb-5">
+								<div class="col-md-12 text-center">
+									<p>
+
+
+									</p>
+								</div>
 							</div>
-						</div>
 					</footer>
 				</div>
-				
-			</div>
 
 			</div>
+
+		</div>
 		</div>
 	</section>
 
@@ -615,7 +621,7 @@
 				</p>
 			</div>
 
-			
+
 
 		</div>
 	</footer>
