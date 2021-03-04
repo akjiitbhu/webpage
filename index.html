@@ -548,6 +548,20 @@
 						</div>
 					</form>
 				</div>
+				
+				<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwxUNzukw_HBF4ZLa0ZOWkRKwoMPN0gehiGhE6_z05RnAwUl6MEfuwOHpVWPyjg0JKy/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+				
+				
 				<div class="col-md-5 pl-md-5">
 					<h3 class="mb-5">My Contact Details</h3>
 					<ul class="site-contact-details">
